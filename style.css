@@ -1,9 +1,31 @@
+/* --------------- Reset --------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 img, video {
     width: 100%;
     height: auto;
     display: block;
 }
 
+/* --------------- Main --------------- */
+main {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+/* --------------- Footer --------------- */
+footer {
+    margin-top: 8%;
+    padding: 2% 5% 2% 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* --------------- Videoformat --------------- */
 iframe {
     width: 100%;
     height: auto;
@@ -13,4 +35,152 @@ iframe {
 video {
     width: 100%;
     height: auto;
+}
+
+/* --------------- Menu --------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5% 1% 5%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  .logo img {
+    width: auto;
+    height: 65px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px;
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: end;
+  }
+  
+  .menu a:hover {
+    color: orangered;
+  }
+
+/* --------------- WEBSITE --------------- */
+@media (min-width: 800px) {
+
+    /* --------------- Grids --------------- */
+    .grid_1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5%;
+        margin-bottom: 5%;
+    }
+
+    .grid_1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
+    }
+
+    .grid_1-1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    /* --------------- Tekst --------------- */
+    h1 {
+        font-family: 'Anton', sans-serif;
+        font-size: 5rem;
+        margin: 5% 0 3% 0;
+    }
+
+    h2 {
+        font-family: 'Anton', sans-serif;
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-family: 'Anton', sans-serif;
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+}
+
+/* --------------- MOBILSITE --------------- */
+@media (max-width: 800px) {
+    
+    /* --------------- Grids --------------- */
+    .grid_1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10%;
+        padding-bottom: 10%;
+    }
+
+    .grid_1-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+
+    .grid_1-1-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    /* --------------- Tekst --------------- */
+    h1 {
+        font-family: 'Anton', sans-serif;
+        font-size: 2rem;
+        margin: 10% 0 5% 0;
+    }
+
+    h2 {
+        font-family: 'Anton', sans-serif;
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-family: 'Anton', sans-serif;
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
 }

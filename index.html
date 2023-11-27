@@ -3,17 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Forside</title>
+    <title>Video</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="navigationbar">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">VIDEO</a></li>
+                    <li><a href="billeder.html">BILLEDER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
-        <h1>HTML-VIDEO</h1>
-        <video controls src="http://saralarsen.dk/kea/05_indhold/videosite/video_60sek.mp4"></video>
-        <h1>YOUTUBE-VIDEO</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Jrm--V1S1kk?si=Jtt_gD2o4j_RAtn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h1>60 SECONDS VIDEO</h1>
+        <div class="grid_1">
+            <div>
+                <video controls src="http://saralarsen.dk/kea/05_indhold/videosite/video_60sek.mp4"></video>
+            </div>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Jrm--V1S1kk?si=Jtt_gD2o4j_RAtn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+        <h3>Lavet af Sara Larsen, MMD 1. semester 2023.</h3>
+    </footer>
 </body>
 </html>
